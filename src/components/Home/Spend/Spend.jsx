@@ -126,7 +126,7 @@ const Spend = () => {
         </div>
 
         <div className={classes["transaction-container"]}>
-          {transactions.length > 0 ? (
+          {transactions?.length > 0 ? (
             transactions
           ) : (
             <h1 style={{ animation: "fadeIn", animationDuration: "1s" }}>
