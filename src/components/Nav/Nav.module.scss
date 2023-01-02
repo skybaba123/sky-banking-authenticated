@@ -1,0 +1,149 @@
+nav {
+  h1 {
+    color: rgb(231, 117, 23);
+  }
+}
+
+.nav {
+  .mobile-nav {
+    width: 50vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+
+    .account-times {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .times {
+        transform: translateY(-1rem);
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    .signout {
+      cursor: pointer;
+
+      svg {
+        color: rgb(233, 90, 90);
+      }
+
+      p {
+        color: rgb(233, 90, 90);
+        font-weight: 600;
+      }
+    }
+
+    div {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .overLay {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.26);
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .active {
+    p {
+      color: rgb(228, 129, 48);
+    }
+    svg {
+      color: rgb(228, 129, 48);
+    }
+  }
+
+  .hambuger {
+    display: none;
+  }
+
+  .nav-links {
+    gap: 3rem;
+  }
+
+  p {
+    color: rgb(173, 173, 173);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  svg {
+    color: rgb(173, 173, 173);
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    p {
+      font-size: 15px;
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav {
+    .mobile-nav {
+      display: block;
+    }
+
+    .overLay {
+      display: block;
+    }
+    .nav-links {
+      display: none;
+    }
+
+    .hambuger {
+      display: block;
+      cursor: pointer;
+
+      .top {
+        width: 22px;
+        height: 1.5px;
+        background-color: black;
+        margin-bottom: 8px;
+      }
+
+      .bottom {
+        width: 22px;
+        height: 2px;
+        background-color: black;
+      }
+    }
+
+    .account {
+      display: none;
+    }
+  }
+}

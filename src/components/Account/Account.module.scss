@@ -1,0 +1,177 @@
+.account {
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 7rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.account-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  width: 850px;
+  max-width: 80%;
+  border-radius: 5px;
+  gap: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.account-detail-header {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .left {
+    display: flex;
+    gap: 12px;
+
+    p,
+    small {
+      font-weight: 600;
+    }
+
+    p {
+      color: rgb(80, 80, 80);
+    }
+
+    small {
+      color: dimgray;
+    }
+
+    .avatar-container {
+      width: 90px;
+      height: 90px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    background-color: #ff7e39;
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 5px;
+    gap: 10px;
+    width: 47%;
+    color: #fff;
+
+    p {
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    h3 {
+      transform: translateY(-9px);
+    }
+
+    h2 {
+      font-size: 32px;
+      transform: translateY(6px);
+
+      sup {
+        font-size: 15px;
+        margin-right: 3px;
+      }
+    }
+
+    button {
+      padding: 7px 10px 7px 10px;
+      border: none;
+      border-radius: 3px;
+      font-weight: 600;
+      background-color: rgb(0, 216, 216);
+      color: rgb(82, 82, 82);
+    }
+  }
+}
+
+.account-detail-body {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .left,
+  .right {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .single-wrapper {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      align-items: center;
+      border-radius: 5px;
+      width: 100%;
+      margin-bottom: 1rem;
+
+      svg {
+        color: #dd4f05;
+      }
+
+      p {
+        color: dimgray;
+        font-weight: 500;
+      }
+
+      &-left {
+        display: flex;
+        align-items: center;
+        height: 55px;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+.account-detail-signout {
+  color: #ff1e00;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+  .account-detail-header {
+    flex-direction: column;
+    gap: 1rem;
+
+    .right {
+      width: 100%;
+      justify-content: space-around;
+      padding-left: 0;
+    }
+  }
+
+  .account-detail-body {
+    flex-direction: column;
+
+    .left,
+    .right {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .account-wrapper {
+    max-width: 85%;
+  }
+}

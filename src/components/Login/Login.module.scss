@@ -1,0 +1,164 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 10;
+
+  h1 {
+    font-size: 25px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    button {
+      cursor: pointer;
+      padding: 0.9rem 1.3rem 0.9rem 1.3rem;
+      border-radius: 10px;
+      border: 0.7px solid #e78651;
+      font-size: 15px;
+      font-weight: 600;
+      color: rgb(109, 109, 109);
+      transition: all 1s;
+
+      &:hover {
+        transform: translateY(-0.3rem);
+      }
+    }
+
+    svg {
+      cursor: pointer;
+    }
+  }
+}
+
+main {
+  padding-top: 7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+
+  .auth {
+    width: 440px;
+  }
+
+  .announcement {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1rem;
+    border-radius: 3px;
+
+    p {
+      color: #e78651;
+      font-size: 13.5px;
+    }
+
+    svg {
+      height: 23px;
+      width: 23px;
+    }
+  }
+
+  .login-wrapper {
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2rem;
+    border-radius: 3px;
+
+    button {
+      cursor: pointer;
+      padding: 0.9rem 2.7rem 0.9rem 2.7rem;
+      border-radius: 10px;
+      border: none;
+      font-size: 15px;
+      font-weight: 600;
+      color: rgb(255, 255, 255);
+      background-color: #e78651;
+      margin-top: 1.5rem;
+      margin-right: 1rem;
+    }
+
+    input {
+      border: none;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: rgb(65, 63, 63);
+
+      &::placeholder {
+        color: rgb(173, 173, 173);
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+
+    svg {
+      cursor: pointer;
+    }
+
+    p {
+      color: rgb(129, 128, 128);
+      font-size: 15px;
+    }
+
+    hr {
+      border-color: rgba(255, 255, 255, 0.158);
+      margin-bottom: 1rem;
+    }
+
+    small,
+    h2,
+    p,
+    hr {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .image-container {
+    max-width: 25%;
+
+    img {
+      flex-shrink: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+  }
+
+  main {
+    position: relative;
+
+    .auth {
+      max-width: 90%;
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .image-container {
+      display: none;
+    }
+  }
+}

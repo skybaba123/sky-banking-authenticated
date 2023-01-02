@@ -1,0 +1,23 @@
+@import "animate.css";
+
+:root {
+  --grey-default: #424a52;
+  --orange-light: #e06a2a;
+  --orange-very-light: #e78651;
+  --orange-bg-svg: #e4a07b9a;
+  --orange-default: #dd4f05;
+}
+
+.App {
+  min-height: 100vh;
+  transition: all 0.8s;
+}
+
+input,
+button {
+  outline: none;
+}
+
+h1 {
+  color: #424a52;
+}

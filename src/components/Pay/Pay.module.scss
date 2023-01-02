@@ -1,0 +1,47 @@
+.pay {
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: #424a52;
+  }
+
+  .payment-nav {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+
+    div {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 500;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      border-radius: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 13px;
+      padding-right: 13px;
+    }
+
+    .active {
+      p,
+      svg {
+        color: #dd4f05;
+      }
+    }
+
+    .inactive {
+      p,
+      svg {
+        color: rgb(145, 145, 145);
+      }
+    }
+  }
+}

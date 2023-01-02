@@ -1,0 +1,209 @@
+.Save {
+  padding-top: 7rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .balance-container {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    max-width: 95%;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .left {
+      display: flex;
+      gap: 0.7rem;
+      align-items: center;
+
+      small {
+        font-size: 12px;
+        font-weight: 500;
+        color: #471d05;
+      }
+
+      h1 {
+        color: #48d38a;
+      }
+    }
+
+    .right {
+      display: flex;
+      gap: 0.7rem;
+      align-items: center;
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: #e47b4246;
+        border-radius: 50%;
+        cursor: pointer;
+        transform: translateY(0.3rem);
+
+        svg {
+          color: #f56e26;
+        }
+      }
+
+      button {
+        cursor: pointer;
+        padding: 0.9rem 2.7rem 0.9rem 2.7rem;
+        border-radius: 10px;
+        border: none;
+        font-size: 15px;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        background-color: #48d38a;
+        margin-top: 1.5rem;
+        margin-right: 1rem;
+        transform: translateY(-0.4rem);
+      }
+
+      @media screen and (max-width: 500px) {
+        button {
+          padding: 0.9rem 1.2rem 0.9rem 1.2rem;
+        }
+      }
+    }
+  }
+
+  .nav-container {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    max-width: 95%;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    a {
+      text-decoration: none;
+      color: rgb(48, 48, 48);
+    }
+
+    p {
+      opacity: 0.6;
+    }
+  }
+
+  .save-details {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    max-width: 95%;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .left {
+      width: 48.5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 170px;
+      border-radius: 5px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+      .div-one {
+        .piggy-icon {
+          width: 30px;
+          height: 30px;
+          display: flex;
+          border-radius: 50%;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 1rem;
+          background-color: #dd51054b;
+
+          svg {
+            color: #dd4f05;
+          }
+        }
+
+        small {
+          color: #fda06e;
+          font-weight: 600;
+        }
+
+        h3 {
+          margin-top: 1rem;
+          color: #dd4f05;
+        }
+      }
+
+      .div-two {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .spend-save {
+          padding: 0.1rem;
+          color: #eb8a55;
+          background-color: #dd51052c;
+        }
+
+        small {
+          color: #eb8a55af;
+          font-weight: 600;
+          margin-bottom: 1rem;
+        }
+
+        h3 {
+          margin-top: 1rem;
+          color: #dd4f05;
+        }
+      }
+    }
+
+    .right {
+      width: 48.5%;
+      height: 170px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border: 1px solid #48d38a;
+      border-radius: 5px;
+      gap: 0.7rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+      p {
+        color: #48d38a;
+        font-weight: 600;
+      }
+    }
+  }
+
+  @media screen and (max-width: 735px) {
+    .save-details {
+      flex-direction: column;
+      gap: 2rem;
+      .left,
+      .right {
+        width: 700%;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .bal-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 25px;
+  }
+}

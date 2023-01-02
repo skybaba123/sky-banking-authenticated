@@ -1,0 +1,64 @@
+.budget-details {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .create-budget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .budget-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+  }
+
+  .top-tag {
+    font-weight: 500;
+    color: dimgray;
+  }
+
+  .amount-spend {
+    font-weight: 600;
+    color: rgb(255, 64, 64);
+    font-size: 19px;
+  }
+
+  .amount-income {
+    font-weight: 600;
+    color: rgb(49, 185, 49);
+    font-size: 19px;
+  }
+
+  .amount-balance {
+    font-weight: 600;
+    color: #dd4f05;
+    font-size: 19px;
+  }
+
+  div {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    width: 255px;
+    height: 90px;
+  }
+
+  @media screen and (max-width: 529px) {
+    div {
+      width: 80%;
+    }
+
+    .budget-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0;
+    }
+  }
+}

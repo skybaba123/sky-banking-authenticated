@@ -1,0 +1,70 @@
+.gift-cards {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 550px;
+  max-width: 95%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  .title {
+    color: #424a52;
+    font-size: 20px;
+    margin-bottom: 1.2rem;
+  }
+
+  .input-container {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    width: 80%;
+    height: 45px;
+    gap: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    input {
+      border: none;
+      outline-width: 0;
+      height: 100%;
+      width: 90%;
+      font-size: 15px;
+      font-weight: 600;
+      color: rgb(122, 122, 122);
+
+      &::placeholder {
+        font-size: 15px;
+        font-weight: 600;
+        color: rgb(189, 189, 189);
+      }
+    }
+  }
+
+  .category-container {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 0.8rem;
+
+    div {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 500;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      border-radius: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 13px;
+      color: rgb(126, 126, 126);
+      padding-right: 13px;
+    }
+  }
+}
