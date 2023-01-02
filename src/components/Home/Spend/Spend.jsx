@@ -45,7 +45,7 @@ const Spend = () => {
     setTransactionInput(e.target.value);
   };
 
-  const transactions = displayTrans.map((tran, id) => (
+  const transactions = displayTrans?.map((tran, id) => (
     <Transaction
       style={{ animation: "fadeIn", animationDuration: "1s" }}
       onClick={() => {
